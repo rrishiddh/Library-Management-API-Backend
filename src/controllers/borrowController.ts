@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { Borrow } from '../models/Borrow';
-import { Book } from '../models/BOOK';
+import { Book } from '../models/Book';
 import mongoose from 'mongoose';
 
 export const borrowBook = async (req: Request, res: Response): Promise<void> => {
