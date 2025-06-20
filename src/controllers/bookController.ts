@@ -1,6 +1,6 @@
-import { Book } from '@/models/Book';
+// import { Book } from '@/models/Book';
 import { Request, Response } from 'express';
-// import { Book } from '../models/Book';
+import { Book } from '../models/Book';
 import mongoose from 'mongoose';
 
 export const createBook = async (req: Request, res: Response): Promise<void> => {
