@@ -1,6 +1,6 @@
 # 📖 Assignment: Library Management API with Express, TypeScript & MongoDB
 
-- A Library Management API built with Express.js, TypeScript and MongoDB (via Mongoose).
+- A Library Management API built with Express.js, TypeScript and MongoDB Atlas (via Mongoose).
 
 * * *
 
@@ -30,16 +30,17 @@
 
  Create a .env file in the root directory:
 
-` envPORT=5000
+``` 
+envPORT=5000
 MONGODB_URI=YOUR_MONGODB_CONNECTION_URI
-NODE_ENV=development`
+NODE_ENV=development
+```
 
 - Step 4: Run the Application.
 `npm run dev`
 
-- Step 5: Ensure MongoDB is running locally.
 
-- Step 6: Test API: Use Postman to test endpoints.
+- Step 5: Test API: Use Postman to test endpoints.
 
 
 ###
