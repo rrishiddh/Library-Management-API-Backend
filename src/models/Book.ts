@@ -72,13 +72,11 @@ const bookSchema = new Schema<IBook>({
   timestamps: true
 });
 
-// Instance method to update availability
 bookSchema.methods.updateAvailability = async function(this: IBook): Promise<void> {
   this.available = this.copies > 0;
   await this.save();
 };
 
-// Static method to update book availability
 bookSchema.statics.updateBookAvailability = async function(bookId: string): Promise<IBook | null> {
   const book = await this.findById(bookId);
   if (!book) return null;
@@ -88,13 +86,11 @@ bookSchema.statics.updateBookAvailability = async function(bookId: string): Prom
   return book;
 };
 
-// Pre-save middleware to automatically set availability
 bookSchema.pre('save', function(next) {
   this.available = this.copies > 0;
   next();
 });
 
-// Post-save middleware
 bookSchema.post('save', function(doc) {
   console.log(`Book "${doc.title}" has been saved with ${doc.copies} copies`);
 });

@@ -31,13 +31,11 @@ const borrowSchema = new Schema<IBorrow>({
   timestamps: true
 });
 
-// Pre-save middleware
 borrowSchema.pre('save', function(next) {
   console.log(`Borrowing ${this.quantity} copies of book ${this.book}`);
   next();
 });
 
-// Post-save middleware
 borrowSchema.post('save', function(doc) {
   console.log(`Borrow record created for book ${doc.book} with quantity ${doc.quantity}`);
 });
