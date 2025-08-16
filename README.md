@@ -1,6 +1,6 @@
-# 📖 Assignment: Library Management API with Express, TypeScript & MongoDB
+# 📖 Library Management API with Express, TypeScript & MongoDB
 
-- A Library Management API built with Express.js, TypeScript and MongoDB Atlas (via Mongoose).
+- A Library Management API (Backend) built with Express.js, TypeScript and MongoDB Atlas (via Mongoose).
 
 * * *
 
@@ -20,7 +20,7 @@
 
 - Step 1: Clone Project Directory.
  
-`git clone https://github.com/rrishiddh/Express-Mongoose-A3.git`
+`git clone https://github.com/rrishiddh/Library-Management-API-Backend.git`
 
 - Step 2: Install Project Dependencies.
 
@@ -81,6 +81,6 @@ NODE_ENV=development
 ##  Link: 
 ### Vercel : [https://library-management-api-rrishiddh.vercel.app/](https://library-management-api-rrishiddh.vercel.app/)
 
-###  Github-Repo : [https://github.com/rrishiddh/Express-Mongoose-A3](https://github.com/rrishiddh/Express-Mongoose-A3)
+###  Github-Repo : [https://github.com/rrishiddh/Library-Management-API-Backend](https://github.com/rrishiddh/Library-Management-API-Backend)
 
 
